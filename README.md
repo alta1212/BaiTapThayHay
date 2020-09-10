@@ -71,6 +71,48 @@ Dòng 8: Trả ra kết quả
 ⇒	Total = 1+1+1+1+2n+n+2(n-1)+1 = 6n
 
 
+--------------------
+Bài 2: 
+Algorithm Sercet(A[0...n-1])
+// Input mảng có n phần tử
+minval ←-A[0];
+maxval ←-A[0];
+for i←-1 to n-1 do
+	if A[i]<minval
+		minval←-A[i]
+	if A[i]>maxval
+		maxval ←-A[i]
+return minval,maxval
+
+a, Thuật toán này tính toán ra giá trị lớn nhất, nhỏ nhất của 1 mảng truyền vào
+
+b, Các phép toán cơ bản so sánh, gán
+
+c, Hoạt động cơ bản thực hiện 
+Dòng 1: Khởi tạo biến minval và gán giá trị cho nó => sum = 2
+Dòng 2: Khởi tạo biến maxval và gán giá trị cho nó => sum = 2
+Dòng 3: 
++) Đầu tiên là có 2 hoạt động là 1 phép cộng và 1 phép gán => sum = 2
++) Vòng lặp được thực hiện n - 1 lần => sum =2(n-1)
++) Hết 1 lần lặp thì được kiểm tra mỗi lần (phép so sánh i<n) => sum=1
++) Kết thúc vòng lặp thì được(n - 1) + 1 lần (n-1 thành công và 1 lần thất bại)
+ => sum = n
+Dòng 4:
+	+) Truy xuất giá trị của A[i] và so sánh với minval => sum =2
+	+) Được thực hiện n-1 lần => sum = 2(n-1)
+Dòng 5:
+	+) Truy xuất giá trị của A[i] và gán cho biến minval => sum =2
+	+) Được thực hiện n-1 lần => sum = 2(n-1)
+Dòng 6,7: tương tự dòng 4,5 : sum = 2(n-1) + 2(n-1) = 4(n-1)
+Dòng 8: Trả về 2 biến sum = 2
+
+⇒	Total = 2+2+2(n-1)+n+4(n-1) + 4(n-1) +2 = 11n-4
+
+d, Ưu điểm của thuật toán
+Dễ hiểu và phổ cập cho sinh viên
+e, 
+
+
 
 
 
